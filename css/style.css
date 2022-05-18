@@ -41,12 +41,11 @@ body{
     width: 50vw;
     height: 80vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    flex-direction: column;
+    padding: 15px 15px 5px 15px;
 }
 canvas{
-    width: 50vw;
-    height: 50vh;
 }
 .keyboard{
     height: 20vh;
