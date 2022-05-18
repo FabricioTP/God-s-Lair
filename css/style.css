@@ -1,0 +1,79 @@
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.mainState{
+    background-image: url("/img/bkg.jpg");
+    background-size: auto 100%;
+}
+.firstScene{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+.historyText{
+    font-size: 3em;
+    font-weight: 600;
+    width: 35vw;
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px 3px #000;
+    color: rgb(255, 255, 255);
+}
+.blackScreen{
+    background-color: black;
+}
+.mainSceneContainer{
+    background-image: url("/img/sandTxt.webp");
+    box-shadow: 0px 0px 50px #000;
+    border-radius: 50px;
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+canvas{
+    width: 50vw;
+    height: 50vh;
+}
+.keyboard{
+    height: 20vh;
+    display: flex;
+    justify-items: flex-end;
+}
+.keyboard ul{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ul button{
+    width: 4em;
+    margin: 5px 5px 5px 5px;
+    border: none;
+    border-radius: 10px;
+    background: rgba( 225, 225, 28, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: #000;
+}
+.finalScene{
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+}
