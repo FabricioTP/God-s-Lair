@@ -45,8 +45,6 @@ body{
     justify-content: space-around;
     padding: 15px 15px 5px 15px;
 }
-canvas{
-}
 .keyboard{
     height: 20vh;
     display: flex;
