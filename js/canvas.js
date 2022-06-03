@@ -1,3 +1,5 @@
+export{drawHead,drawBody,drawRightArm,drawLeftArm,drawLeftLeg,drawRightLeg}
+
 let cvs = document.querySelector("canvas")
 cvs.width=900
 cvs.height=500
@@ -104,16 +106,8 @@ function drawLeftLeg(){
         ctx.lineTo(lftLegX,lftLegY)
         ctx.stroke()
         requestAnimationFrame(drawLeftLeg)
-        console.log(lftLegX);
     }else{
         ctx.closePath()
         cancelAnimationFrame(drawLeftLeg)
     }
 }
-
-drawHead()
-drawBody()
-drawRightArm()
-drawLeftArm()
-drawRightLeg()
-drawLeftLeg()
