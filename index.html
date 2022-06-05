@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="/img/pyramidIcon.ico" type="image/x-icon">
 </head>
-<body class="mainState">
-    <!--
+<body class="blackScreen">
         <section class="firstScene">
             <p class="historyText">
                 Seu nome é Rael, um devoto dos antigos Deuses do egito antigo. Os deuses
@@ -18,8 +17,16 @@
                 e admiração aos deuses, você aceita o desafio, mesmo que sua vida esteja
                 em jogo.
             </p>
+            <div id="firstSceneBtnCont">
+                <button class="interfaceBtn">Iniciar o desafio.</button>
+                <button class="interfaceBtn">Deuses, aumentem meu desafio!</button>
+            </div>
+            <p id="wordMsg"></p>
+            <div id="newWordCont">
+                <input class="campoNewWord" type="text" name="adicionarPalavra" id="firstSceneNewWord" pattern="[A-Za-z]+$">
+                <button id="sendNewWord">Novo Panteão</button>
+            </div>
         </section>
-    -->
     <main>
         <section class="mainSceneContainer">
             <canvas></canvas>
@@ -67,7 +74,7 @@
         <div class="gameOverScreen">
             <p class="historyText">Game Over</p>
             <p class="historyText">Tentar novamente?</p>
-            <button class="interfaceBtn">Não desistirei da minha fé!</button>
+            <button id="retryBtn" class="interfaceBtn">Não desistirei da minha fé!</button>
         </div>
 </body>
 <script type="module" src="js/canvas.js"></script>
