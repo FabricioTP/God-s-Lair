@@ -89,13 +89,40 @@ body{
     border-radius: 50px;
     width: 50vw;
     height: 80vh;
-    display: none;/**/
+    display: none;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 15px 15px 5px 15px;
 }
+#letrasDisplayCont{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#letrasJaJogadas{
+    width: 12vw;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+    font-size: 2em;
+    margin: 0;
+    font-weight: 600;
+}
+.tracosStyle{
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+    font-size: 3em;
+    margin: 0;
+    font-weight: 600;
+}
+.vitoria{
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+    font-size: 3em;
+    margin: 0;
+    font-weight: 600;
+    color: lime;
+}
 .keyboard{
-    height: 20vh;
+    height: 18vh;
     display: flex;
     justify-items: flex-end;
 }
@@ -138,7 +165,7 @@ ul button{
     margin: 1% 0 1% 0;
 }
 .finalScene{
-    display: flex;
+    display: none;
     width: 50vw;
     justify-content: center;
 }

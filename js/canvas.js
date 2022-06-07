@@ -1,7 +1,7 @@
-export{drawHead,drawBody,drawRightArm,drawLeftArm,drawLeftLeg,drawRightLeg}
+export{drawHead,drawBody,drawRightArm,drawLeftArm,drawLeftLeg,drawRightLeg,limparTela}
 
 let cvs = document.querySelector("canvas")
-cvs.width=900
+cvs.width=800
 cvs.height=500
 
 let ctx= cvs.getContext("2d")
@@ -110,4 +110,13 @@ function drawLeftLeg(){
         ctx.closePath()
         cancelAnimationFrame(drawLeftLeg)
     }
+}
+function limparTela(){
+    ctx.clearRect(0,0,cvs.width,cvs.height)
+    ctx.beginPath()
+    ctx.fillRect(30,50,20,450)
+    ctx.fillRect(0,480,180,20)
+    ctx.fillRect(30,50,350,20)
+    ctx.fillRect(340,50,10,50)
+    ctx.closePath()
 }
