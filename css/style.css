@@ -1,0 +1,171 @@
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    transition: all 0.5s;
+}
+.mainState{
+    background-image: url("/img/bkg.jpg");
+    background-size: auto 100%;
+}
+.firstScene{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.historyText{
+    font-size: 2.5em;
+    font-weight: 600;
+    width: 35vw;
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px 3px #000;
+    color: rgb(255, 255, 255);
+}
+#firstSceneBtnCont{
+    margin-top: 2%;
+}
+#newWordCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s;
+    display: flex;
+    opacity: 0;
+}
+.erroMsg{
+    color: red;
+}
+.sucessoMsg{
+    color: lime
+}
+.campoNewWord{
+    height: 2.5em;
+    width: 20em;
+    text-align: center;
+    margin: 5% 0 5% 0;
+    border-style: none;
+    box-shadow: 1px 1px 20px rgb(214, 212, 71);
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+.campoNewWord:focus{
+    outline: none;
+    background-color: rgb(178, 185, 115);
+}
+#sendNewWord{
+    position: relative;
+    top: 0px;
+    width: 10em;
+    border-style: none;
+    box-shadow: 1px 1px 20px rgb(214, 212, 71);
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+#sendNewWord:hover{
+    background-color: rgb(148, 146, 49);
+    top: 2px;
+}
+.blackScreen{
+    background-color: black;
+}
+.mainSceneContainer{
+    background-image: url("/img/sandTxt.webp");
+    box-shadow: 0px 0px 50px #000;
+    border-radius: 50px;
+    width: 50vw;
+    height: 80vh;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px 15px 5px 15px;
+}
+#letrasDisplayCont{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#letrasJaJogadas{
+    width: 12vw;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+    font-size: 2em;
+    margin: 0;
+    font-weight: 600;
+}
+.tracosStyle{
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+    font-size: 3em;
+    margin: 0;
+    font-weight: 600;
+}
+.vitoria{
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+    font-size: 3em;
+    margin: 0;
+    font-weight: 600;
+    color: lime;
+}
+.keyboard{
+    height: 18vh;
+    display: flex;
+    justify-items: flex-end;
+}
+.keyboard ul{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ul button{
+    width: 4em;
+    margin: 5px 5px 5px 5px;
+    border: none;
+    border-radius: 10px;
+    background: rgba( 225, 225, 28, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: #000;
+}
+.gameOverScreen{
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#retryBtn{
+    display: none;
+}
+.interfaceBtn{
+    width: 15vw;
+    height: 5em;
+    border-style: none;
+    box-shadow: 1px 1px 20px rgb(214, 212, 71);
+    border-radius: 20px;
+    margin: 1% 0 1% 0;
+}
+.finalScene{
+    display: none;
+    width: 50vw;
+    justify-content: center;
+}
