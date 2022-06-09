@@ -351,20 +351,25 @@ ul button{
         width: 600px;
     }
     #letrasDisplayCont{
-        height: vh;
+        margin-top: 5%;
+        width: 20vw;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     #letrasJaJogadas{
-        font-size: 26px;
+        font-size: 22px;
     }
     .tracosStyle{
-        font-size: 28px;
+        font-size: 26px;
     }
     .keyboard{
-        height: 14vh;
+        height: 6vh;
     }
     ul button{
         width: 6em;
-        height: 1.8em;
+        height: 3em;
     }
     /*WIN*/
     .finalScene{
