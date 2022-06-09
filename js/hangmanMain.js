@@ -78,6 +78,7 @@ function iniciaGame(){
 }
 function vitoria(){
   if(contadorVitorias == 3){
+    letrasJaEscolhidasDisplay.textContent = ""
     palavraDisplay.classList.remove("tracosStyle")
     palavraDisplay.classList.add("vitoria");
     textReveal="Palavra correta!"
